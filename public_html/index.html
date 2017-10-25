@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css" />
+		<title>
+			CALCULATRICE
+		</title>
+	</head>
+	<body>
+		<div class="content">
+			<div class="rowscreen">
+				<input type="text" id="screen" placeholder="0" disabled/>
+			</div>
+			<div>
+				<table>
+				
+				<tr>
+					<td>
+						<button value="7" onclick="f(7);">7</button>
+					</td>
+					<td>
+						<button value="8" onclick ="f(8);" >8</button>
+					</td>
+					<td>
+						<button value="9" onclick="f(9);">9</button>
+					</td>
+					<td>
+						<button class="notnumber" onclick="f('/');" value="/">/</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button value="4" onclick="f(4);">4</button>
+					</td>
+					<td>
+						<button value="5" onclick="f(5);">5</button>
+					</td>
+					<td>
+						<button value="6" onclick="f(6);">6</button>
+					</td>
+					<td>
+						<button class="notnumber" onclick="g('*');" value="*">X</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button value="3" onclick="f(3);">3</button>
+					</td>
+					<td>
+						<button value="2" onclick="f(2);">2</button>
+					</td>
+					<td>
+						<button value="1" onclick="f(1);">1</button>
+					</td>
+					<td>
+						<button class="notnumber" onclick="f('-');" value="-">-</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button value="0" onclick="f(0);">0</button>
+					</td>
+					<td>
+						<button class="notnumber" onclick="g('.');" value=".">.</button>
+					</td>
+					<td>
+						<button class="notnumber" onclick="equal();" value="=">=</button>
+					</td>
+					<td>
+						<button class="notnumber" onclick="g('+');" value="+">+</button>
+					</td>
+				</tr>
+			</table>
+			</div>
+			
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
